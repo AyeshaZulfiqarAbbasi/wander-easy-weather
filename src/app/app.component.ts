@@ -2,11 +2,14 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'weather-app';
+  title = 'WanderEasy Weather';
+  selectedCity: string = '';
+
+  onCitySelected(city: string): void {
+    this.selectedCity = city;
+  }
 }

@@ -1,29 +1,49 @@
-import { TestBed } from '@angular/core/testing';
+import { TestBed, ComponentFixture } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { CitySelectorComponent } from './components/city-selector/city-selector.component';
+import { ForecastDisplayComponent } from './components/forecast-display/forecast-display.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { WeatherService } from './services/weather.service';
 
 describe('AppComponent', () => {
+  let component: AppComponent;
+  let fixture: ComponentFixture<AppComponent>;
+
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AppComponent],
+      declarations: [
+        AppComponent,
+        CitySelectorComponent,
+        ForecastDisplayComponent
+      ],
+      imports: [
+        FormsModule,
+        HttpClientTestingModule
+      ],
+      providers: [WeatherService]
     }).compileComponents();
+
+    fixture = TestBed.createComponent(AppComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
   });
 
   it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
-  });
-
-  it(`should have the 'weather-app' title`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('weather-app');
+    expect(component).toBeTruthy();
   });
 
   it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, weather-app');
+    expect(compiled.querySelector('h1')?.textContent).toContain('WanderEasy Weather');
+  });
+
+  it(`should have the 'WanderEasy Weather' title`, () => {
+    expect(component.title).toEqual('WanderEasy Weather');
+  });
+
+  it('should handle city selection', () => {
+    component.onCitySelected('London');
+    expect(component.selectedCity).toBe('London');
   });
 });

@@ -1,0 +1,7 @@
+<div class="container mt-3">
+  <h2>Select a City</h2>
+  <select class="form-select" [(ngModel)]="selectedCity" (change)="onCityChange()">
+    <option value="" disabled>Select a city</option>
+    <option *ngFor="let city of cities" [value]="city">{{ city }}</option>
+  </select>
+</div>

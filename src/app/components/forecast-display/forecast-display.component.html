@@ -1,0 +1,14 @@
+<div class="container mt-4">
+  <h3 *ngIf="city">5-Day Forecast for {{ city }}</h3>
+  <div *ngIf="error" class="alert alert-danger">{{ error }}</div>
+  <div class="row">
+    <div *ngFor="let day of forecast" class="col-md-2 card m-2">
+      <div class="card-body">
+        <h5>{{ day.dt_txt | date:'shortDate' }}</h5>
+        <p>Temp: {{ day.main.temp }}°C</p>
+        <p>{{ day.weather[0].description }}</p>
+        <img [src]="'http://openweathermap.org/img/wn/' + day.weather[0].icon + '.png'" alt="Weather icon">
+      </div>
+    </div>
+  </div>
+</div>
