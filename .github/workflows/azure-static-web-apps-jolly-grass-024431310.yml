@@ -25,9 +25,12 @@ jobs:
           node-version: '18.20.8'
       - name: Install Dependencies
         run: npm install
+      - name: Install Dev Dependencies
+        run: npm install --save-dev @angular-devkit/build-angular
       - name: Install Angular CLI
         run: npm install -g @angular/cli
       - name: Build
+        working-directory: ${{ github.workspace }}
         run: ng build --configuration production
       - name: Build And Deploy
         id: builddeploy
@@ -38,7 +41,6 @@ jobs:
           app_location: "/"
           api_location: ""
           output_location: "dist/wander-easy-weather/browser"
-          # No app_build_command needed since we build manually
           action: "upload"
           # Repository/Build Configurations - These values can be configured to match your app requirements.
           # For more information, visit: https://aka.ms/swaworkflowconfig
