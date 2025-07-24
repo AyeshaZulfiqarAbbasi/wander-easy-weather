@@ -40,7 +40,7 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           app_location: "/"
           api_location: ""
-          output_location: "dist/wander-easy-weather/browser"
+          output_location: "dist/weather-app"  # Updated to match angular.json
           action: "upload"
           # Repository/Build Configurations - These values can be configured to match your app requirements.
           # For more information, visit: https://aka.ms/swaworkflowconfig
