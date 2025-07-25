@@ -1,27 +1,142 @@
-# WeatherApp
+# WanderEasy Weather Forecast Web App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.20.
+A weather forecast web application developed for **WanderEasy**, a fictional travel agency. Built using Angular and OpenWeatherMap API, it provides 5-day forecasts for 50 cities with a responsive user interface styled using Bootstrap.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 📋 Project Description
 
-## Code scaffolding
+The app allows users to select a city and view detailed weather forecasts including temperature, weather conditions, and other data. Designed for travelers who need quick and reliable weather updates.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## 🎯 Objective
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Gain hands-on experience with:
 
-## Running unit tests
+- Angular framework and component-based architecture
+- RESTful API integration (OpenWeatherMap)
+- Responsive UI using Bootstrap
+- Deployment on Azure Static Web Apps
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+## 🕒 Estimated Time: 40 Hours
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Researching Angular and weather APIs: 6 hours  
+- Setting up Angular project and API integration: 10 hours  
+- Developing UI for city selection and forecast display: 10 hours  
+- Testing API calls and responsiveness: 8 hours  
+- Documenting code and user guide: 6 hours  
 
-## Further help
+---
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 🧱 Deliverables
+
+- Architecture diagram of the weather app  
+- Angular and OpenWeatherMap API configuration notes  
+- Forecast display test results  
+- User guide for travelers (Word document)  
+- Presentation for WanderEasy marketing team  
+
+---
+
+## 🧪 Mock Data
+
+- **Agency**: WanderEasy  
+- **Cities**: 50 selected travel destinations  
+- **Forecast Data**: 5-day forecast per city (temperature, conditions)
+
+---
+
+## 💻 Tech Stack
+
+- **Frontend**: Angular  
+- **Styling**: Bootstrap CSS  
+- **API**: OpenWeatherMap  
+- **Hosting**: Azure Static Web Apps  
+- **Budget**: $100 for cloud/API services (hypothetical)  
+
+---
+
+## 🛠️ Features
+
+- City search and selection  
+- 5-day weather forecast view  
+- Responsive design using Bootstrap  
+- Real-time API data rendering  
+- Error handling for API failures
+
+---
+
+## 📦 Installation & Setup
+
+### Prerequisites
+
+- Node.js & Angular CLI  
+- OpenWeatherMap API key
+
+### Steps
+
+1. **Clone the repository:**
+```bash
+git clone https://github.com/yourusername/wandereasy-weather-app.git
+```
+
+2. **Navigate to the project folder:**
+```bash
+cd wandereasy-weather-app
+```
+
+3. **Install dependencies:**
+```bash
+npm install
+```
+
+4. **Run the app locally:**
+```bash
+ng serve
+```
+
+5. Visit `http://localhost:4200` in your browser
+
+---
+
+## 🚀 Deployment (Azure Static Web Apps)
+
+1. Push the code to a GitHub repository  
+2. Create a Static Web App resource on Azure  
+3. Connect to your GitHub repo and set build settings  
+4. Azure auto-builds and deploys the Angular app  
+5. Share the live URL with users
+
+---
+## Visit the web page
+
+**URL** : https://jolly-grass-024431310.2.azurestaticapps.net
+---
+
+## 📬 Contact
+
+**Project by**: Ayesha Zulfiqar  
+**GitHub**: [AyeshaZulfiqarAbbasi](https://github.com/AyeshaZulfiqarAbbasi)  
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 📄 Screenshot
+
+<img width="1911" height="673" alt="Screenshot 2025-07-25 081525" src="https://github.com/user-attachments/assets/2850d80e-dd35-4436-b4ef-223e1da8c6d9" />
+
+<img width="1915" height="747" alt="Screenshot 2025-07-25 081549" src="https://github.com/user-attachments/assets/0717a27f-842e-42db-b455-3548446c3a9c" />
+
+<img width="1915" height="827" alt="Screenshot 2025-07-25 081602" src="https://github.com/user-attachments/assets/8e3947ad-b7ef-4c42-9c67-e0f674fffd49" />
+
+
+
+
